@@ -1,5 +1,5 @@
 {
-  "name": "Jane Smith",
+  "name": "ZuniconAI",
   "title": "Creative Designer",
   "description": "Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.",
   "thumbnail": "jane-smith.png",
@@ -17,5 +17,9 @@
       "url": "https://example.com"
     }
   ],
-  "skills": ["Advertising", "Business", "Designer"]
+  "skills": [
+    "Advertising",
+    "Business",
+    "Designer"
+  ]
 }
