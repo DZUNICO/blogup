@@ -1,8 +1,8 @@
 {
-  "name": "Jane Smith",
+  "name": "Zunicon AI",
   "title": "Creative Designer",
-  "description": "Sed commodo, est quis maximus fermentum, massa ipsum euismod neque, in varius risus tellus quis lacus. Sed ac bibendum odio.",
-  "thumbnail": "jane-smith.png",
+  "description": "",
+  "thumbnail": "zuniconai.png",
   "social": [
     {
       "name": "Instagram",
@@ -17,5 +17,10 @@
       "url": "https://example.com"
     }
   ],
-  "skills": ["Advertising", "Business", "Designer"]
+  "skills": [
+    "Construction",
+    "Business",
+    "Designer",
+    "Electrician"
+  ]
 }
