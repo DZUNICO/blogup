@@ -106,7 +106,7 @@
               label: 'Category',
               name: 'category',
               widget: 'relation',
-              collection: 'categories',
+              collection: 'categorias',
               search_fields: ['name'],
               value_field: 'name',
               display_fields: ['name'],
@@ -199,16 +199,16 @@
           ],
       },
       ####################################################################
-      #   Categories Collection
+      #   Categorias Collection
       ####################################################################
       {
-        name: 'categories',
-        label: 'Categories',
+        name: 'categorias',
+        label: 'Categorias',
         label_singular: 'Category',
         identifier_field: 'name',
         media_folder: '',
         public_folder: '',
-        folder: 'site/content/categories',
+        folder: 'site/content/categorias',
         extension: 'json',
         format: 'json',
         create: true,

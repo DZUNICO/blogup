@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     {
@@ -8,10 +10,28 @@ module.exports = {
       resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
       options: {
         sources: {
-          local: true
+          local: true,
         },
         // Add theme options here. Check documentation for available options.
         siteUrl: process.env.URL || process.env.VERCEL_URL
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-algolia',
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        chunkSize: 10000,
+        queries: require('@elegantstack/gatsby-blog-algolia/src/queries')
+      }
+    },
+    {
+      // ATTENTION: Match the theme name with the theme you're using
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {
+        services: {
+          algolia: true
+        }
       }
     }
   ],
