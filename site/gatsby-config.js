@@ -9,6 +9,10 @@ module.exports = {
     {
       resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
       options: {
+        siteUrl: 'https://main--relaxed-cocada-1adc3f.netlify.app',
+        services: {
+          graphComment: true
+        },
         sources: {
           local: true,
         },
