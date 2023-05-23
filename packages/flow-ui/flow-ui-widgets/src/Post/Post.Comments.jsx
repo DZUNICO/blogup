@@ -3,6 +3,7 @@ import { Box, Divider } from 'theme-ui'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 const PostComments = ({ title, id }) => {
+  console.log(hola)
   let disqusConfig = {
     identifier: id,
     title: title

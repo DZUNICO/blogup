@@ -28,6 +28,8 @@ const Post = ({
     ...(categoryPosts ? categoryPosts.nodes : [])
   ]
   const { pageContext: { services = {}, siteUrl } = {} } = props
+  
+  console.log(services)
 
   return (
     <Layout {...props}>
@@ -44,7 +46,7 @@ const Post = ({
             <PostBody {...post} />
             <PostTagsShare {...post} location={props.location} />
             {services.disqus && <PostComments {...post} />}
-            {services.graphComment && <PostCommentsGraph {...post} />}
+            {!services.graphComment && <PostCommentsGraph {...post} />}
             {services.facebookComment && (
               <PostCommentsFacebook {...post} siteUrl={siteUrl} />
             )}

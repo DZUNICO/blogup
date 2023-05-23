@@ -9,15 +9,20 @@ module.exports = {
     {
       resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
       options: {
-        siteUrl: 'https://main--relaxed-cocada-1adc3f.netlify.app',
-        services: {
-          graphComment: true
-        },
         sources: {
           local: true,
         },
         // Add theme options here. Check documentation for available options.
         siteUrl: process.env.URL || process.env.VERCEL_URL
+      }
+    },
+    {
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {
+        siteUrl: 'https://main--relaxed-cocada-1adc3f.netlify.app', // Your site URL without trailing slash
+        services: {
+          graphComment: true
+        }
       }
     },
     {
