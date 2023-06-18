@@ -29,8 +29,6 @@ const Post = ({
   ]
   const { pageContext: { services = {}, siteUrl } = {} } = props
   
-  console.log(services)
-
   return (
     <Layout {...props}>
       <Seo {...post} siteUrl={siteUrl} />

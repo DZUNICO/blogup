@@ -31,10 +31,29 @@ const NewsletterForm = ({
       <>
         <Box variant='forms.row'>
           <Input
+            name='fname'
+            type='text'
+            placeholder='Nombre'
+            aria-label='Nombre'
+            required
+          />
+        </Box>
+        <Box variant='forms.row'>
+          <Input
+            name='phone'
+            type='phone'
+            placeholder='Teléfono'
+            aria-label='Teléfono'
+            required
+            //pattern='/^([+]\d{2})?\d{9}$/'
+          />
+        </Box>
+        <Box variant='forms.row'>
+          <Input
             name='email'
             type='email'
-            placeholder='Email Address'
-            aria-label='Email Address'
+            placeholder='Correo Electrónico'
+            aria-label='Correo Electrónico'
             required
           />
         </Box>
@@ -44,7 +63,7 @@ const NewsletterForm = ({
           disabled={success || submitting}
           sx={styles.button}
         >
-          Subscribe {submitting && <Spinner size='20' />}
+          Suscríbete {submitting && <Spinner size='20' />}
         </Button>
       </>
     )}
@@ -60,3 +79,4 @@ NewsletterForm.propTypes = {
   message: PropTypes.string,
   success: PropTypes.bool
 }
+

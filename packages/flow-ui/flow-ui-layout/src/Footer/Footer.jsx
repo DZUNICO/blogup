@@ -19,7 +19,7 @@ export const Footer = () => (
         <Box>
           <FooterLogo />
         </Box>
-        <FooterMenu />
+        {/* <FooterMenu /> */}
         <Box>
           <FooterSocial />
         </Box>

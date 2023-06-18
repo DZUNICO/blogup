@@ -11,15 +11,48 @@ module.exports = {
       options: {
         sources: {
           local: true,
+          //mailchimp: true
         },
         // Add theme options here. Check documentation for available options.
         siteUrl: process.env.URL || process.env.VERCEL_URL
       }
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_END_POINT
+      }
+    },
+    {
+      // ATTENTION: Match the theme name with the theme you're using
       resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
       options: {
-        siteUrl: 'https://main--relaxed-cocada-1adc3f.netlify.app', // Your site URL without trailing slash
+        services: {
+          mailchimp: true
+        }
+      }
+    },
+    //favicon manifest
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Plataforma digital de la construcción',
+        short_name: 'Zunicom',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#5a67d8',
+        display: 'minimal-ui',
+        icon: 'content/assets/favicon.png'
+      }
+    },
+    {
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {}
+    },
+    {
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {
+        siteUrl: 'https://zunicom.pe', // Your site URL without trailing slash
         services: {
           graphComment: true
         }
@@ -42,17 +75,40 @@ module.exports = {
           algolia: true
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID'
+      }
+    },
+    {
+      // ATTENTION: Match the theme name with the theme you're using
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {}
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {}
+    },
+    {
+      // ATTENTION: Match the theme name with the theme you're using
+      resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
+      options: {}
     }
+
   ],
   // Customize your site metadata:
   siteMetadata: {
     //General Site Metadata
-    title: 'FlexiBlog Theme',
-    name: 'FlexiBlog',
-    description: 'My site description...',
-    address: 'New York, NY',
-    email: 'email@example.com',
-    phone: '+1 (888) 888-8888',
+    siteUrl: 'https://zunicom.pe',
+    title: 'Zunicom',
+    name: 'Zunicom',
+    description: 'Plataforma digital de la Construcción',
+    address: 'Perú',
+    email: 'zunicomperu@gmail.com',
+    phone: '',
 
     //Site Social Media Links
     social: [
@@ -73,15 +129,15 @@ module.exports = {
     //Header Menu Items
     headerMenu: [
       {
-        name: 'Home',
+        name: 'Inicio',
         slug: '/'
       },
-      {
-        name: 'Our Team',
+      /* {
+        name: 'Empresas',
         slug: '/authors'
-      },
+      }, */
       {
-        name: 'Contact',
+        name: 'Contacto',
         slug: '/contact'
       }
     ],

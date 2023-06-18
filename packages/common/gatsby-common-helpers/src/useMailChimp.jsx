@@ -9,8 +9,11 @@ const useMailChimp = () => {
     e.preventDefault()
     setSubmitting(true)
     const data = new FormData(e.target)
-    const email = data.get('email')
-    const result = await addToMailchimp(email)
+    const email = data.get('email').toLowerCase()
+    const fname = data.get('fname')
+    const phone = data.get('phone')
+    const result = await addToMailchimp(email, {FNAME: fname, PHONE: phone})
+    console.log(result)
     setResult(result)
     setSubmitting(false)
   }

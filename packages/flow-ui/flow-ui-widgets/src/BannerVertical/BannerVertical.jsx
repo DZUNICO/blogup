@@ -55,16 +55,16 @@ const BannerVertical = () => (
   <Flex sx={styles.wrapper}>
     <Heading variant='h2' sx={styles.heading}>
       <FaRegHandshake />
-      Best Networking Workshops
+      Convenios con Empresas
     </Heading>
     <Heading variant='h4' sx={styles.subheading}>
-      In this workshop, learn when and how to network with modern best
-      practices.
+      Nos encontramos gestionando convenios con empresas relacionadas al sector de construcción, para ofrecer mas beneficios a nuestros suscriptores
     </Heading>
     <Text as='ul' variant='small' sx={styles.list}>
-      <li>Explain the importance of networking for career-building</li>
-      <li>Practice modern tips for effective networking</li>
-      <li>Understand the steps towards building your own network</li>
+      <li>Constructoras</li>
+      <li>Proveedores de materiales y servicios</li>
+      <li>Instituciones</li>
+      <li>Profesionales del sector</li>
     </Text>
     <Button
       variant='primary'
@@ -73,7 +73,7 @@ const BannerVertical = () => (
       sx={styles.button}
       aria-label='Learn More'
     >
-      Learn More
+      Suscríbete
     </Button>
   </Flex>
 )

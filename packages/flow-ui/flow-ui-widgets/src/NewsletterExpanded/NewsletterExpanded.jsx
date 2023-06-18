@@ -60,9 +60,9 @@ const NewsletterExpanded = ({ simple }) => {
             <FaWind css={css(styles.wind)} />
           </Box>
         )}
-        <Heading variant='h2'>Subscribe to our newsletter!</Heading>
+        <Heading variant='h2'>Suscripción gratuita!!</Heading>
         <Text variant='p'>
-          We'll send you the best of our blog just once a month. We promise.
+          Se parte de esta maravillosa comunidad y accede a la mejor información y mucho más.
         </Text>
         <Box sx={styles.form}>
           <NewsletterForm

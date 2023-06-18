@@ -15,13 +15,19 @@ const Posts = ({
 }) => {
   const { pageContext: { services = {} } = {} } = props
   const categories = useBlogCategories()
-
+  
+  /**para ordenar alfabeticamente las categorias */
+  const cat= categories.sort(function(a,b){
+    if(a.name < b.name) { return -1; }
+    if(a.name > b.name) { return 1; }
+    return 0;
+  })
   return (
     <Layout {...props}>
       <Seo title='Home' />
       <Divider />
       <Stack effectProps={{ effect: false }}>
-        <Categories categories={categories} variant='horizontal' omitTitle />
+        <Categories categories={cat} variant='horizontal' omitTitle />
       </Stack>
       <Divider />
       <Stack effectProps={{ effect: false }}>
@@ -45,6 +51,7 @@ const Posts = ({
             loading='eager'
           />
         </Main>
+        {/* Aqui va el Banner Vertical */}
         <Sidebar sx={{ pl: `3`, flexBasis: `1/4` }}>
           <BannerVertical />
         </Sidebar>
@@ -156,9 +163,10 @@ const Posts = ({
             {index === 0 && (
               <>
                 <Divider />
-                <Stack effectProps={{ effect: false }}>
+                {/* Aqui puede ir una publicidad Horizontal */}
+                {/* <Stack effectProps={{ effect: false }}>
                   <BannerHorizontal />
-                </Stack>
+                </Stack> */}
               </>
             )}
             {index !== posts.group.length - 1 && <Divider />}
@@ -166,7 +174,7 @@ const Posts = ({
         ))}
       <Stack>
         <Main>
-          {services.mailchimp && (
+          {!services.mailchimp && (
             <>
               <Divider space={5} />
               <NewsletterExpanded />
