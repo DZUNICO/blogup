@@ -6,21 +6,26 @@ import Seo from '@widgets/Seo'
 import ContactForm from '@widgets/ContactForm'
 import ContactInfo from '@widgets/ContactInfo'
 import Commitment from '@widgets/Commitment'
+import NewsletterExpanded from '@widgets/NewsletterExpanded'
 
 const PageContact = props => (
   <Layout {...props}>
-    <Seo title='Contact' />
+    <Seo title='Contacto' />
     <Divider />
     <Stack>
       <Main>
         <PageTitle
-          header="Let's Connect"
-          subheader='FlexiBlog theme comes with a pre-made contact form component.
-					You can integrate this form with serverless services such as Formspree, Getform,
-					FormKeep and others to receive form submissions via email.'
+          header="Contáctanos"
+          subheader='Si deseas contactarnos directamente para cualquier consulta, puedes escribirnos al correo 
+          zunicomperu@gmail.com, además te invitamos a suscribirte sin ningún costo y acceder a los beneficios 
+          de nuestra comunidad'
         />
-        <Divider />
-        <ContactForm />
+        
+        <Divider space={5} />
+        <NewsletterExpanded />
+        
+        {/* <ContactForm /> */}
+
       </Main>
       <Sidebar>
         <Commitment />

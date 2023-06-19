@@ -69,7 +69,7 @@ const BannerVertical = () => (
     <Button
       variant='primary'
       as={Link}
-      to='/'
+      to='#news'
       sx={styles.button}
       aria-label='Learn More'
     >

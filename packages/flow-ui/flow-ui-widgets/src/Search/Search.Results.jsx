@@ -15,7 +15,7 @@ const Hits = ({ searchState, searchResults }) => {
   useScrollDisabler()
 
   if (!searchResults || !searchState.query) {
-    return 'What are you looking for?'
+    return 'Qué estas buscando?'
   }
 
   if (searchResults.query !== searchState.query) {
@@ -24,7 +24,7 @@ const Hits = ({ searchState, searchResults }) => {
   }
 
   if (searchResults && searchResults.nbHits < 1) {
-    return `No results for '${searchResults.query}'`
+    return `No hay resultados para '${searchResults.query}'`
   } else {
     const hitsByCategory = groupArray(searchResults.hits, 'category.name')
     const categories = Object.keys(hitsByCategory)

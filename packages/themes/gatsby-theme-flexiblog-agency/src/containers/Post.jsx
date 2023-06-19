@@ -52,7 +52,8 @@ const Post = ({
           </CardComponent>
         </Main>
         <Sidebar>
-          <AuthorCompact author={post.author} omitTitle />
+          {/* Esta barra muestra el Autor del Post */}
+          {/* <AuthorCompact author={post.author} omitTitle /> */}
           <Divider />
           <Sticky>
             {post.tableOfContents?.items && (

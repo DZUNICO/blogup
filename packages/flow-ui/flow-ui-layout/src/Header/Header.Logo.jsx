@@ -14,7 +14,7 @@ export const HeaderLogo = ({ ...props }) => {
   const { logo, logoDark } = useStaticQuery(logoQuery)
 
   const logoNormal = getImage(logo)
-  const LogoDark = getImage(logoDark)
+  const LogoDark = getImage(logo)
 
   if (!logoNormal) return null
 

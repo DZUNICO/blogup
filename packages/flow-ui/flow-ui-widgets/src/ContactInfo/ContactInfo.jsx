@@ -8,11 +8,11 @@ const ContactInfo = () => {
   const { phone, address, email } = useSiteMetadata()
 
   return (
-    <Section aside title='Advertise With Us'>
+    <Section aside title='Anuncia con Nosotros'>
       <Card variant='paper'>
-        <Text variant='p'>Interested in working together?</Text>
+        <Text variant='p'>Interesado en Anunciar?</Text>
         <Text variant='p'>
-          Suspendisse potenti. Mauris mollis diam tempus ut.
+          Si deseas anunciar tu marca o producto con nosotros ponte en contacto 
         </Text>
         {phone && (
           <Text>

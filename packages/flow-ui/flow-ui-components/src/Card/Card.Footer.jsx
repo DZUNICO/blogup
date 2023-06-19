@@ -20,9 +20,10 @@ const styles = {
 const CardFooter = ({ omitFooter, ...props }) =>
   !omitFooter && (
     <Flex css={styles.wrapper} sx={{ variant: rv(props.variant, 'footer') }}>
-      <AuthorAvatar {...props} />
+      {/* Las lineas comentadas son para No mostrar el autor en las Cards */}
+      {/* <AuthorAvatar {...props} /> */}
       <Flex sx={styles.postInfo}>
-        <AuthorName {...props} />
+        {/* <AuthorName {...props} /> */}
         <Info {...props} />
       </Flex>
     </Flex>

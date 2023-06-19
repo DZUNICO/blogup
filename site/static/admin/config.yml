@@ -34,8 +34,8 @@
       #   Articles Collection
       ####################################################################
       {
-        name: 'articles',
-        label: 'Articles',
+        name: 'articulos',
+        label: 'Articulos',
         label_singular: 'Article',
         path: '{{category}}/{{slug}}/index',
         folder: 'site/content/posts',
@@ -208,7 +208,7 @@
         identifier_field: 'name',
         media_folder: '',
         public_folder: '',
-        folder: 'site/content/categorias',
+        folder: 'site/content/categories',
         extension: 'json',
         format: 'json',
         create: true,

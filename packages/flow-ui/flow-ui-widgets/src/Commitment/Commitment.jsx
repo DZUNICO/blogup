@@ -3,13 +3,12 @@ import { Card, Text } from 'theme-ui'
 import Section from '@components/Section'
 
 const Commitment = props => (
-  <Section aside title='Our Commitment' {...props}>
+  <Section aside title='Nuesto Compromiso' {...props}>
     <Card variant='paper'>
       <Text variant='p'>
-        We take our commitment to our users seriously. If you need our help with
-        your project, have questions about how to use the site or are
-        experiencing any technical difficulties, please do not hesitate to
-        contact us.
+        Nos tomamos muy enserio nuestro compromiso con nuestros usuarios. Si necesita nuestra ayuda con
+        su proyecto, tiene preguntas sobre cómo usar el sitio o si experimenta alguna dificultad técnica, no dude en
+        Contactarnos.
       </Text>
     </Card>
   </Section>

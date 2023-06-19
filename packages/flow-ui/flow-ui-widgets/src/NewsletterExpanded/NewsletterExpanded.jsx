@@ -52,7 +52,7 @@ const NewsletterExpanded = ({ simple }) => {
   } = useMailChimp()
 
   return (
-    <Card variant='paper' sx={styles.card}>
+    <Card id="news" variant='paper' sx={styles.card}>
       <Box sx={styles.wrapper}>
         {!simple && (
           <Box sx={styles.icons}>
