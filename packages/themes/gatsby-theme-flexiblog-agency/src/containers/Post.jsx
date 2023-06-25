@@ -64,7 +64,7 @@ const Post = ({
             )}
             {post.category && (
               <CardList
-                title='Related Posts'
+                title='Artículos Relacionados'
                 nodes={relatedPosts}
                 variant='horizontal-aside'
                 limit={6}
