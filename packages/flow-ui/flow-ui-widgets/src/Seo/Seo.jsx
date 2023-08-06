@@ -43,14 +43,14 @@ const Seo = ({
     { itemprop: 'name', content: title || site.title },
     { itemprop: 'description', content: description },
     { name: 'description', content: description },
-    { name: 'google-site-verification', content: 'qb3xk6oBLXlmKzTd0ADxWHKG8DeTGJvWTehC09vVM8A' },
-
+    
     { property: 'og:title', content: title || site.title },
     { property: 'og:description', content: description },
     { property: 'og:type', content: date ? 'article' : 'website' },
     { property: 'og:site_name', content: site.name },
     { property: 'og:image', content: imageUrl },
-
+    
+    { name: 'google-site-verification', content: 'qb3xk6oBLXlmKzTd0ADxWHKG8DeTGJvWTehC09vVM8A' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:site', content: site.name },
     { name: 'twitter:title', content: title },

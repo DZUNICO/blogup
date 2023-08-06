@@ -3,7 +3,7 @@ import { Card, Text } from 'theme-ui'
 import Section from '@components/Section'
 
 const Commitment = props => (
-  <Section aside title='Nuesto Compromiso' {...props}>
+  <Section aside title='Nuestro Compromiso' {...props}>
     <Card variant='paper'>
       <Text variant='p'>
         Nos tomamos muy enserio nuestro compromiso con nuestros usuarios. Si necesita nuestra ayuda con
